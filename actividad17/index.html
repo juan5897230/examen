@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aprobado o Reprobado</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        let calificacion1, calificacion2, calificacion3;
+        calificacion1 = prompt('Ingrese 1ra. calificacion:');
+        calificacion2 = prompt('Ingrese 2da. calificacion:');
+        calificacion3 = prompt('Ingrese 3ra. calificacion:');
+        //Convertimos los 3 string en enteros
+        calificacion1 = parseInt(calificacion1);
+        calificacion2 = parseInt(calificacion2);
+        calificacion3 = parseInt(calificacion3);
+        let pro;
+        pro = (calificacion1 + calificacion2 + calificacion3) / 3;
+        if (pro >= 6) {
+            document.write('Aprobado');
+        } else {
+            if (pro <= 5) {
+                document.write('reprobado');
+            } else {
+                document.write('reprobado');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
